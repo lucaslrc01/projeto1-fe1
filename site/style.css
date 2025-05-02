@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: rgb(244, 244, 244);
+    color: rgb(0, 0, 0);
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    border-radius: 50%;
+}
+
+/* header */
+
+.bloco {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blue;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* sections */
+
+section {
+    padding: 40px 0;
+}
+
+.sobre {
+    background-color: rgb(232, 232, 247);
+    padding: 90px 0;
+    display: flex;
+}
+
+.sobre .bloco {
+    display: flex;
+    gap: 30px;
+}
+
+.bloco .texto {
+    margin: auto 0;
+}
+
+.sobre .bloco p {
+    margin: 20px 0
+}
+
+/* ------------------------------------- */
+
+.habilidades h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.habilidades .bloco {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.habilidades .bloco02 {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.icon img{
+    width: 10%;
+}
+
+.habilidade {
+    text-align: center;
+}
+
+/* --------------------- footer ------------------------*/
+
+.contato {
+    background-color: rgb(144, 144, 175);
+    text-align: center;
+    padding: 35px 0;
+}
+
+.contato h4{
+    margin: 8px 0;
+}
+
+.contato a {
+    margin: 30px 0;
+}
+
+/* celular*/
+
+@media screen and (max-width: 820px) {
+    img {
+        max-width: 90%;
+    }
+    
+    .navegacao {
+        flex-direction: column;
+    }
+
+    .sobre {
+        padding-top: 120px;
+        width: 100%;
+    }
+    
+    .sobre .bloco {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .habilidades .bloco {
+        grid-template-columns: 1fr;
+        max-width: 75%;
+    }
+
+    .habilidades .bloco02 {
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        max-width: 75%;
+    }
+
+}
+
+
+
