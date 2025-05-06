@@ -17,9 +17,6 @@ a {
     color: black;
 }
 
-img {
-    border-radius: 50%;
-}
 
 /* header */
 
@@ -67,6 +64,10 @@ section {
     background-color: rgb(232, 232, 247);
     padding: 90px 0;
     display: flex;
+}
+
+.sobre .bloco .imagem img{
+    border-radius: 50%;
 }
 
 .sobre .bloco {
@@ -125,9 +126,65 @@ section {
     margin: 30px 0;
 }
 
+/* -------------------------------- Projetos ---------------------------------------*/
+
+.projetos {
+    padding: 100px 0px;
+}
+
+.projetos h1 {
+    text-align: center;
+}
+
+.bloco-projetos {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.projeto {
+    background-color: rgb(193, 193, 204);
+    border-radius: 10%;
+    text-align: center;
+
+}
+
+.projeto img{
+    width: 100%;
+    height: 60%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+.projeto p {
+    max-height: 100%;
+}
+
+
 /* celular*/
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1050px){
+    /* projetos */
+
+    .bloco-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    .projeto {
+        margin: 0 auto;
+        min-height: 200px;
+        width: 75%;
+    }
+
+    .projeto img {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
     img {
         max-width: 90%;
     }
@@ -156,6 +213,8 @@ section {
         grid-template-columns: 1fr;
         max-width: 75%;
     }
+
+    
 
 }
 
