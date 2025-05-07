@@ -45,6 +45,9 @@ a {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.logo a {
     color: blue;
 }
 
@@ -54,7 +57,7 @@ a {
     gap: 20px;
 }
 
-/* sections */
+/* --------------- sections ------------------- */
 
 section {
     padding: 40px 0;
@@ -83,7 +86,7 @@ section {
     margin: 20px 0
 }
 
-/* ------------------------------------- */
+/* ----------------- habilidade -------------------- */
 
 .habilidades h2{
     text-align: center;
@@ -132,8 +135,14 @@ section {
     padding: 100px 0px;
 }
 
+.projetos hr {
+    width: 0%;
+    margin: 50px auto;
+}
+
 .projetos h1 {
     text-align: center;
+    margin: 30px 0;
 }
 
 .bloco-projetos {
@@ -141,15 +150,21 @@ section {
     width: 90%;
     max-width: 1100px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
 }
 
 .projeto {
     background-color: rgb(193, 193, 204);
+    max-width: 100%;
     border-radius: 10%;
     text-align: center;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
 
+.projeto:hover {
+    transform: scale(1.15);
 }
 
 .projeto img{
@@ -160,22 +175,30 @@ section {
 }
 
 .projeto p {
+    margin: 0 4px;
     max-height: 100%;
 }
 
+.sobre .bloco .imagem-faculdade img{
+    border-radius: 15%;
+}
 
-/* celular*/
+
+/* --------------------- celular ---------------------------------*/
 
 @media screen and (max-width: 1050px){
-    /* projetos */
+    /* ------------- projetos --------------------------*/
 
     .bloco-projetos {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
+
     }
 
     .projeto {
         margin: 0 auto;
-        min-height: 200px;
+        min-height: 25rem;
+        max-height: 25rem;
         width: 75%;
     }
 
@@ -185,6 +208,8 @@ section {
 }
 
 @media screen and (max-width: 800px) {
+    /* -------------- menu -----------------*/
+    
     img {
         max-width: 90%;
     }
@@ -214,8 +239,24 @@ section {
         max-width: 75%;
     }
 
-    
+    /* --------------------- projetos -------------------*/
+    .bloco-projetos {
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
 
+    .projeto {
+        min-height: 26rem;
+        max-height: 26rem;
+        margin: 0 auto;
+        width: 65%;
+
+    }
+
+    .projeto img {
+        max-height: 13rem;
+        min-width: 100%;
+    }
 }
 
 
