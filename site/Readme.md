@@ -8,11 +8,11 @@
 ## Estrutura do Site
 O site foi estruturado em três páginas principais, todas interligadas por um menu de navegação comum e com um layout responsivo:
 
- > Página Pessoal: apresenta meu nome completo, idade, cidade de origem e habilidades técnicas;
+ > Página Pessoal: apresenta meu nome completo, idade, cidade de origem, hobbies e uma lista de favoritos (séries, músicas e livros);
 
  > Página Acadêmica: descreve minha vida acadêmica, incluindo o curso que estou cursando, o semestre atual, disciplinas já estudadas, e demais experiências educacionais relevantes;
 
- > Página Profissional: reúne informações sobre projetos já desenvolvidos e outras atividades que demonstram minha evolução e interesse na área de tecnologia.
+ > Página Profissional: reúne informações sobre projetos já desenvolvidos e habilidades técnicas que possuo.
 
 Todas as páginas possuem cabeçalho, seções organizadas com conteúdo textual e imagens, além de um rodapé com formas de contato (como e-mail e redes sociais).
 
